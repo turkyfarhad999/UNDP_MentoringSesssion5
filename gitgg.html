@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Turky — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name, a university student focusing on software engineering and design." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#top" class="logo" aria-label="Home">YN</a>
+    <nav aria-label="Primary">
+      <button class="menu-btn" aria-expanded="false" aria-controls="navlist" aria-label="Toggle navigation">☰</button>
+      <ul id="navlist" class="navlist">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle" class="ghost" type="button">Toggle theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="herotitle">
+      <div class="hero-text">
+        <h1 id="herotitle">Hi, I’m <span class="accent">Farhad Ahammed Turky</span>.</h1>
+        <p class="lead">
+          CS student at <strong>RUET</strong>. Interested in <em>Game developing</em>, <em>data visualization</em>, and <em>human-centered design</em>.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects">See my projects</a>
+          <a class="btn ghost" href="assets/resume.pdf" download>Download résumé</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/profile.png" alt="Headshot of Your Name" />
+      </figure>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p>
+        I’m <strong>TURKY</strong>, a <strong>1st year </strong> student majoring in <strong>CSE</strong> at <strong>RUET</strong>.
+        I like shipping simple, accessible products and collaborating in diverse teams. Recently, I’ve been exploring
+        performance-minded React, design systems, and small data viz projects.
+      </p>
+      <ul class="quickfacts">
+        <li>📍 Dhaka,Bangladesh</li>
+        <li>🎓 Class of [Year]</li>
+        <li>💡 Interests: gaming, travelling, gossiping</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <!-- Project 1 -->
+      <article class="card project">
+        <div class="card-body">
+          <h3>Campus Navigator</h3>
+          <p>
+            A responsive map app to find buildings, cafés, and study spaces with student tips.
+          </p>
+          <ul class="tags">
+            <li>TypeScript</li><li>Leaflet</li><li>Supabase</li>
+          </ul>
+          <div class="links">
+            <a class="btn" href="https://example-live-campus-navigator.com" target="_blank" rel="noopener">Live</a>
+            <a class="btn ghost" href="https://github.com/yourusername/campus-navigator" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card project">
+        <div class="card-body">
+          <h3>StudyTrack</h3>
+          <p>
+            Minimalist habit tracker with streaks, reminders, and offline support (PWA).
+          </p>
+          <ul class="tags">
+            <li>React</li><li>PWA</li><li>IndexedDB</li>
+          </ul>
+          <div class="links">
+            <a class="btn" href="https://example-live-studytrack.com" target="_blank" rel="noopener">Live</a>
+            <a class="btn ghost" href="https://github.com/yourusername/studytrack" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card project">
+        <div class="card-body">
+          <h3>Class Notes Dashboard</h3>
+          <p>
+            Organizes lecture notes and adds semantic search with a simple UI.
+          </p>
+          <ul class="tags">
+            <li>Python</li><li>Flask</li><li>Embeddings</li>
+          </ul>
+          <div class="links">
+            <a class="btn" href="https://example-live-notes-dashboard.com" target="_blank" rel="noopener">Live</a>
+            <a class="btn ghost" href="https://github.com/yourusername/class-notes-dashboard" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h4>Languages</h4>
+          <p>Python, JavaScript/TypeScript, C++, SQL</p>
+        </div>
+        <div>
+          <h4>Frameworks</h4>
+          <p>React, Flask, Node, Express</p>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <p>Git, VS Code, Figma, Docker (basics)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>
+        ✉️ Email:
+        <a href="turkyfarhad@yahoo.com">yourname@email.com</a>
+        &nbsp;·&nbsp; 🧑‍💻 GitHub:
+        <a href="https://github.com/turkyfarhad999" target="_blank" rel="noopener">yourusername</a>
+        &nbsp;·&nbsp; 💼 LinkedIn:
+        <a href="https://linkedin.com/in/turkyfarhad" target="_blank" rel="noopener">yourusername</a>
+      </p>
+
+      <!-- Simple no-backend contact form via Formspree.
+           Replace the action URL with your own Formspree endpoint. -->
+      <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+        <label>
+          <span>Name</span>
+          <input name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send Message</button>
+</form>
+</section>
+
+</main>
+<footer class="site-footer">
+  <p>© 2025 Your Name. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
